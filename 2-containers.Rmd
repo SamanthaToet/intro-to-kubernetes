@@ -1,0 +1,18 @@
+---
+title: "2-containers"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# orchestration
+
+With container images, we confine the application code, its runtime, and all of its dependencies in a pre-defined format. And, with container runtimes like runC, containerd, or cri-o we can use those pre-packaged images, to create one or more containers. All of these runtimes are good at running containers on a single host. But, in practice, we would like to have a fault-tolerant and scalable solution, which can be achieved by creating a single controller/management unit, after connecting multiple nodes together. This controller/management unit is generally referred to as a container orchestrator. 
+
+Containers encapsulate microservices and their dependencies but do not run them directly. Containers run container images (bundle of the application along with its runtime, libraries, and dependencies). 
+
+Container orchestrators are tools which group systems together to form clusters where containers' deployment and management is automated at scale.
+

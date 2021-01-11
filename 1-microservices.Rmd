@@ -1,0 +1,18 @@
+---
+title: "1-microservices"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Microservices-based architecture is aligned with Event-driven Architecture and Service-Oriented Architecture (SOA) principles, where complex applications are composed of small independent processes which communicate with each other through APIs over a network.
+
+Each microservice can be scaled individually, either manually or automated through demand-based autoscaling. 
+
+There is virtually no downtime and no service disruption to clients because upgrades are rolled out seamlessly - one service at a time, rather than having to re-compile, re-build and re-start an entire monolithic application.
+
+When transitioning, orgs need to decide how to decouple the databases from the application to separate data complexity from application logic. 
+
+Other features of containerized application environments are higher server utilization, individual module scalability, flexibility, interoperability and easy integration with automation tools.
